@@ -1,9 +1,14 @@
-export class Negociacao {
+import { NegociacoesService } from '../services/negociacoes-service.js';
+import { Imprimivel } from '../utils/imprimivel.js';
+
+export class Negociacao extends Imprimivel {
     constructor(
         private _data: Date, 
         public readonly quantidade: number, 
         public readonly valor: number
-    ) {}
+    ) {
+        super();
+    }
 
     public static criaDe(dataString: string, quantidadeString: string, valorString: string): Negociacao {
         const exp = /-/g;
