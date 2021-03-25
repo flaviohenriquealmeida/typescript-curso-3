@@ -43,6 +43,8 @@ export class NegociacaoController {
         }
 
         this.negociacoes.adiciona(negociacao);
+        console.log(negociacao.paraTexto());
+        console.log(this.negociacoes.paraTexto());
         this.limparFormulario();
         this.atualizaView();
     }
