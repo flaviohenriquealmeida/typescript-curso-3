@@ -1,7 +1,5 @@
-import { Imprimivel } from '../utils/imprimivel.js';
-export class Negociacao extends Imprimivel {
+export class Negociacao {
     constructor(_data, quantidade, valor) {
-        super();
         this._data = _data;
         this.quantidade = quantidade;
         this.valor = valor;
